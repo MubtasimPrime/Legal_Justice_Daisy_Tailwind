@@ -22,8 +22,12 @@
     <!-- Custom variable -->
     <style type="text/tailwindcss">
       @theme {
-        --color-clifford: #da373d;
         --font-garamond: "EB Garamond", serif;
+        --font-poppins: "Poppins", serif;
+      }
+      .global {
+        margin: 0;
+        padding: 0;
       }
     </style>
 
@@ -34,8 +38,87 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="font-garamond">
-    <h1>HEllO</h1>
+  <body class="font-garamond global">
+    <header class="max-w-screen-xl mx-auto">
+      <nav>
+        <!-- Nav's Parent div -->
+        <div class="navbar justify-between mt-12 items-center">
+          <!-- Logo -->
+          <div>
+            <img src="images/logo2.png" alt="" />
+          </div>
+
+          <!-- Home-About-Contact -->
+          <div class="p-1">
+            <ul
+              class="flex gap-7 text-[#707070] text-[1rem] font-normal font-poppins items-center justify-center"
+            >
+              <li>
+                <a class="relative top-1/3" href="#">Home</a>
+              </li>
+              <li>
+                <a href="#"
+                  >Services
+                  <span class="ml-1 relative top-0.5"
+                    ><i
+                      class="fa-solid fa-angle-right text-w text-xl"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Cases
+                  <span class="ml-1 relative top-0.5"
+                    ><i
+                      class="fa-solid fa-angle-right text-w text-xl"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Blog
+                  <span class="ml-1 relative top-0.5"
+                    ><i
+                      class="fa-solid fa-angle-right text-w text-xl"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Contact US
+                  <span class="ml-1 relative top-0.5"
+                    ><i
+                      class="fa-solid fa-angle-right text-w text-xl"
+                    ></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button -->
+          <div
+            class="class=text-[1rem] text-white font-semibold bg-[#B68C5A] py-4 px-7 rounded-lg font-poppins"
+          >
+            <button>Free Consultation</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner Section -->
+      <section></section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
   </body>
 </html>
