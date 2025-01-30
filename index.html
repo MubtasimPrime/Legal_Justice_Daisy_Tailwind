@@ -6,12 +6,13 @@
     <title>Justice</title>
 
     <!-- Daisy + Tailwind CDN -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
     <script
@@ -25,9 +26,8 @@
         --font-garamond: "EB Garamond", serif;
         --font-poppins: "Poppins", serif;
       }
-      .global {
-        margin: 0;
-        padding: 0;
+      .garamond {
+        font-family: "EB Garamond", serif;
       }
     </style>
 
@@ -51,7 +51,9 @@
     <header class="max-w-screen-xl mx-auto">
       <nav>
         <!-- Nav's Parent div -->
-        <div class="navbar justify-between mt-12 items-center">
+        <div
+          class="navbar flex-col sm:gap-4 lg:flex-row justify-between mt-12 items-center"
+        >
           <!-- Logo -->
           <div>
             <img src="images/logo2.png" alt="" />
@@ -106,7 +108,7 @@
 
           <!-- Button -->
           <div
-            class="class=text-[1rem] text-white font-semibold bg-[#B68C5A] py-4 px-7 rounded-lg font-poppins"
+            class="text-[1rem] text-white font-semibold bg-[#B68C5A] py-4 px-7 rounded-lg font-poppins"
           >
             <button>Free Consultation</button>
           </div>
@@ -114,7 +116,49 @@
       </nav>
 
       <!-- Banner Section -->
-      <section></section>
+      <section class="sm:px-4">
+        <!-- Banner-Image -->
+        <div
+          class="relative hero mt-[3.75rem] mb-[7.5rem] rounded-xl max-w-full"
+        >
+          <div
+            class="absolute rounded-xl inset-0 before:absolute before:inset-0 before:bg-[url('images/banner.png')] before:rounded-xl before:bg-cover before:bg-center before:bg-no-repeat after:absolute after:inset-0 after:bg-gradient-to-t after:from-black after:to-slate-700 after:opacity-55 after:rounded-xl"
+          ></div>
+
+          <!-- Text content -->
+          <div class="hero-content flex-col text-center">
+            <!-- H1 & P tag -->
+            <div class="max-w-3xl">
+              <h1
+                class="mt-[6.5rem] mb-6 text-5xl lg:text-7xl font-bold text-white garamond"
+              >
+                We Provide Effective Legal Solutions
+              </h1>
+              <p class="mb-8 px-10 text-[#E7E7E7] leading-7">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center flex-col lg:flex-row gap-4 justify-between max-w-3xl mb-[6.5rem]"
+            >
+              <!-- Input field -->
+              <input
+                type="text"
+                placeholder="Search your services"
+                class="input input-bordered w-[30rem] lg:w-[40rem] py-8"
+              />
+              <button
+                class="text-[1.25rem] text-white font-semibold bg-[#B68C5A] py-4 px-7 rounded-lg border-none"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main></main>
